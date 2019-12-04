@@ -1,0 +1,58 @@
+-- MySQL dump 10.16  Distrib 10.1.41-MariaDB, for debian-linux-gnu (x86_64)
+--
+-- Host: localhost    Database: southeast_2.0
+-- ------------------------------------------------------
+-- Server version	10.1.41-MariaDB-0ubuntu0.18.04.1
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `southeast_2.0`
+--
+
+DROP TABLE IF EXISTS `southeast_2.0`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `southeast_2.0` (
+  `Southeast_ID` varchar(15) NOT NULL,
+  `Name` varchar(45) DEFAULT NULL,
+  `Ticket_No` varchar(45) DEFAULT NULL,
+  `Permit_No` varchar(45) DEFAULT NULL,
+  `Plate_No` varchar(45) DEFAULT NULL,
+  `Car_Make` varchar(45) DEFAULT NULL,
+  `Car_Model` varchar(45) DEFAULT NULL,
+  `Description` longtext,
+  PRIMARY KEY (`Southeast_ID`),
+  UNIQUE KEY `Southeast_ID_UNIQUE` (`Southeast_ID`),
+  UNIQUE KEY `Ticket_No_UNIQUE` (`Ticket_No`),
+  UNIQUE KEY `Plate_No_UNIQUE` (`Plate_No`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `southeast_2.0`
+--
+
+LOCK TABLES `southeast_2.0` WRITE;
+/*!40000 ALTER TABLE `southeast_2.0` DISABLE KEYS */;
+INSERT INTO `southeast_2.0` VALUES ('111','Jay','1234','98','LA1235','Honda','Accord','I payed for the meter and got a ticket'),('222','Fasih','1235','97','FUR98','Toyota','Camry','I only parked there for 20 minutes.');
+/*!40000 ALTER TABLE `southeast_2.0` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
