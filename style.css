@@ -1,0 +1,26 @@
+body{
+font-family: Calibri;
+}     
+
+    h1 {
+    background-color: #C8102E;
+    color: #FFFFFF;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    margin-left: 30%;
+    margin-right: 30%;    
+    text-align: center;
+    border-radius: 20px 20px 0px 0px;
+    padding: 2%;
+    min-height: 20px;
+    line-height: 35px;
+    }    
+
+    #Background {
+      background-color: #EEEEEE;
+      padding:2%;
+      margin-left: 30%;
+    margin-right: 30%;
+      
+      border-radius: 0px 0px 20px 20px;
+      }  
